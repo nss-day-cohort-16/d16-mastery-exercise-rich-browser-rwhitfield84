@@ -1,0 +1,20 @@
+{{#each this}}
+{{log this}}
+{{#moduloIf @index 0}}
+ <div class="row">
+{{/moduloIf}}
+  <div id="{{this.name}}" class="col-md-3 toyCard">
+  <a data-delete-id="{{this.id}}" href="#" class="close deleteBtn ">x</a>
+    <h3> {{name}} </h3>
+    <h5 class="toy-price">{{price}}</h5>
+    <img class="card-img" src="{{image}}">
+  </div>
+  {{#moduloIf @index increment 3}}
+ </div>
+ {{/moduloIf}}
+{{/each}}
+
+
+
+
+ 

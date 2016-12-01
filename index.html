@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<title>Toys, Toys Toys!</title>
+</head>
+<body>
+<div class ="container">
+<nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--          <div class="nav navbar-nav navbar-left">
+          </div>
+ --></div>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <i class="glyphicon glyphicon-search"></i>
+            <input id="query" type="text" class="form-control" placeholder="Search Toys" size="100">
+          </div>
+          <button id="search" type="button" class="btn btn-default">Search</button>
+        </form>
+        <div>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="btn" id="signIn"><img src="images/btn_google_signin_light_normal_web%402x.png" alt="google sign in button" height="30px"></a></li>
+          <li><a href="#" class="hide" id="signOut">Sign Out</a></li>
+        </ul>
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+     <div id="toyBtns" class="btn-group btn-group-justified">
+      <a id=allToys href="#" class="btn btn-primary">All Toys</a>
+      <a id="editToys" href="#" class="btn btn-primary">Add Toys</a>
+    </div>
+    </div>
+    <div id="output" class="container"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="dist/app.js"></script>
+</body>
+</html>
