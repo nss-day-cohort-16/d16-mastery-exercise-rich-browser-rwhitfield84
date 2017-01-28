@@ -1,0 +1,13 @@
+{{#each this}}
+ <div class="row">
+ <div class="col-md-3"></div>
+  <div id="{{this.name}}" class="col-md-6 toyCard">
+  <a data-delete-id="{{this.id}}" href="#" class="close deleteBtn ">x</a>
+    <h3> {{name}} </h3>
+    <img class="toy-img" src="{{image}}">
+    <h5 class="toy-price">{{price}}</h5>
+    <p class="description">{{description}}</p>
+  </div>
+  <div class="col-md-3"></div>
+ </div>
+{{/each}}
